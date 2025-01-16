@@ -5,3 +5,79 @@
   font-style: normal;
   font-variation-settings: 'width' 100;
 }
+
+/* shared style */
+.dis-flex {
+  display: flex;
+}
+/* dark-1 */
+.text-gray {
+  color: #424242;
+}
+.header-bg {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
+.banner-btn {
+  background-color: rgba(255, 144, 14, 1);
+  padding: 16px 20px;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+}
+
+/* nav style is start here */
+
+.brand {
+  font-size: 2rem;
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-items {
+  list-style: none;
+  margin-right: 30px;
+}
+.nav-link {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+.navbar,
+.banner {
+  max-width: 1100px;
+  margin: 0px auto;
+}
+/* banner style is start here */
+.banner-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.banner-title {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.banner-description {
+  color: rgba(114, 114, 114, 1);
+  font-size: 16px;
+  font-weight: 400;
+}
+.banner img {
+  width: 100%;
+}
+
+/* responsive media query */
+
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav-links {
+    flex-direction: column;
+  }
+}
